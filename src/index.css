@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Premium Brand Colors */
+  --color-brand-green-dark: #0f2a24;    /* Primary dark forest green */
+  --color-brand-green-primary: #153e35; /* Professional brand green */
+  --color-brand-green-light: #eaf2f0;   /* Light background green tint */
+  --color-brand-gold-dark: #b8935c;     /* Gold text/accents */
+  --color-brand-gold: #c5a880;          /* Secondary accent gold */
+  --color-brand-gold-light: #f7f4f0;    /* Background warm tint */
+  
+  --color-neutral-dark: #1e1e1e;        /* Dark gray for rich text */
+  --color-neutral-light: #f9f9f9;       /* Soft light background */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-neutral-light);
+  color: var(--color-neutral-dark);
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8935c;
+}
